@@ -30,4 +30,4 @@ For the build you will need only the top_PCB of the keyboard!
 8. Assemble them together using the M2x8 screws and M2x15 standoffs.
 9. Apply the small rubber feet on the bottom of the case.
 
-![exploded_view](Quadrant/images/acrylic_layered_case_exploded.jpg)
+![eploded view](/Quadrant/images/acrylic_layered_case_exploded.jpg)
