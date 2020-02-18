@@ -1,6 +1,6 @@
 # Quadrant
 
-![Quadrant](https://imgur.com/hlcYKP5)
+![Quadrant](https://i.imgur.com/S5f1Tn7.jpg)
 
 A 5x14 ortholinear keyboard with "barebone" design.
 
