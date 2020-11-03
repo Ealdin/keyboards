@@ -1,8 +1,8 @@
 {
     "keyboard_name": "Quadrant E-C",
     "keyboard_folder": "quadrant",
-    "url": "", 
-    "maintainer": "Ealdin", 
+    "url": "https://github.com/Ealdin/keyboards/tree/master/Quadrant", 
+    "maintainer": "Ealdin Keyboards", 
     "width": 14, 
     "height": 5, 
     "layouts": {

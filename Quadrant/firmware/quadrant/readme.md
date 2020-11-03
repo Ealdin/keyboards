@@ -4,7 +4,7 @@
 
 A 5x14 ortholinear keyboard with "barebone" design.
 
-Keyboard Maintainer: [Ealdin](https://github.com/Ealdin)  
+Keyboard Maintainer: [Ealdin Keyboards](https://github.com/Ealdin)  
 Hardware Supported: Quadrant E-C   
 Hardware Availability: -
 

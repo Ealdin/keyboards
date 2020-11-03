@@ -1,5 +1,5 @@
 /*
-Copyright 2019 Ealdin
+Copyright 2020 Ealdin Keyboards
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,8 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x0000
+#define VENDOR_ID       0x0192   // Ealdin Keyboards "ƒ"
+#define PRODUCT_ID      0x5154   // Quadrant "QT"
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Ealdin
 #define PRODUCT         Quadrant E-C
