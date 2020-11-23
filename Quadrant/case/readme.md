@@ -3,6 +3,8 @@
 You can find the case files for the Quadrant here if you would like to go a little fancier than the stock design.
 For the build you will need only the top_PCB of the keyboard!
 
+![case render](/Quadrant/images/quadrant-r2_render_case.jpg)
+
 ## List of extra parts:
    - 10 or 11 pcs of laser cut acrylic plate
    - optionally 1 pc of laser cut metal/carbon fibre/FR-4 mounting plate (for more details, see the buid guide)
