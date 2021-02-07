@@ -1,4 +1,4 @@
-/* Copyright 2020 Ealdin Keyboards
+/* Copyright 2021 Ealdin Keyboards
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,29 +23,16 @@ void quadrant_led_off() {
   writePinLow(F0);
 }
 
-void keyboard_pre_init_kb(void) {
-  // Initialize Caps Lock LED
-  setPinOutput(F0);
-  keyboard_pre_init_user();
-}
 
 // Rotary encoder functions:
 
-#define MEDIA_KEY_DELAY 5
 
-uint8_t layer = 0;
-
-uint32_t layer_state_set_kb(uint32_t state) {
-  state = layer_state_set_user(state);
-  layer = biton32(state);
-  return state;
-}
 
 void encoder_update_kb(uint8_t index, bool clockwise) {
   uint16_t mapped_code = 0;
   if (index == 0) {
     if (clockwise) {
-        switch(layer){
+        switch(get_highest_layer(layer_state)){
             case 0:
             default:
                 mapped_code = KC_VOLD;
@@ -58,7 +45,7 @@ void encoder_update_kb(uint8_t index, bool clockwise) {
                 break;
         }
     } else {
-        switch(layer){
+        switch(get_highest_layer(layer_state)){
             case 0:
             default:
                 mapped_code = KC_VOLU;
@@ -71,9 +58,6 @@ void encoder_update_kb(uint8_t index, bool clockwise) {
                 break;
         }
     }
-    uint16_t held_keycode_timer = timer_read();
-    register_code(mapped_code);
-    while (timer_elapsed(held_keycode_timer) < MEDIA_KEY_DELAY){ /* no-op */ }
-    unregister_code(mapped_code);
+    tap_code(mapped_code);
   }
 }
